@@ -13,6 +13,8 @@
 	"devDependencies": {
 		"@commitlint/cli": "18.4.3",
 		"@commitlint/config-conventional": "18.4.3",
+		"@pch1024/commitlint": "0.0.2",
+		"@pch1024/eslint-config": "0.2.2",
 		"@typescript-eslint/eslint-plugin": "6.13.2",
 		"@typescript-eslint/parser": "6.13.2",
 		"commitizen": "4.3.0",
@@ -21,6 +23,5 @@
 		"husky": "8.0.3",
 		"lint-staged": "15.2.0",
 		"prettier": "3.1.1"
-	},
-	"dependencies": {}
+	}
 }
