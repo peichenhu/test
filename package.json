@@ -1,0 +1,26 @@
+{
+	"name": "@pch1024/test",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"private": true,
+	"scripts": {
+		"prepare": "husky install",
+		"lint": "lint-staged"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "18.4.3",
+		"@commitlint/config-conventional": "18.4.3",
+		"@typescript-eslint/eslint-plugin": "6.13.2",
+		"@typescript-eslint/parser": "6.13.2",
+		"commitizen": "4.3.0",
+		"cz-conventional-changelog": "3.3.0",
+		"eslint": "8.55.0",
+		"husky": "8.0.3",
+		"lint-staged": "15.2.0",
+		"prettier": "3.1.1"
+	},
+	"dependencies": {}
+}
