@@ -2,26 +2,38 @@
 	"name": "@pch1024/test",
 	"version": "1.0.0",
 	"main": "index.js",
-	"author": "",
 	"license": "ISC",
-	"description": "",
 	"private": true,
 	"scripts": {
-		"prepare": "husky install",
-		"lint": "lint-staged"
+		"lint": "lint-staged",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "18.4.3",
 		"@commitlint/config-conventional": "18.4.3",
-		"@pch1024/commitlint": "0.0.2",
-		"@pch1024/eslint-config": "0.2.2",
-		"@typescript-eslint/eslint-plugin": "6.13.2",
-		"@typescript-eslint/parser": "6.13.2",
+		"@commitlint/cz-commitlint": "18.4.3",
+		"@pch1024/cz-commitlint-conventional": "0.0.1",
+		"@pch1024/prettier-config": "0.0.2",
+		"@typescript-eslint/eslint-plugin": "^6.13.2",
+		"@typescript-eslint/parser": "^6.13.2",
 		"commitizen": "4.3.0",
-		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.55.0",
+		"eslint": "^8.55.0",
 		"husky": "8.0.3",
+		"inquirer": "8",
 		"lint-staged": "15.2.0",
 		"prettier": "3.1.1"
+	},
+	"prettier": "@pch1024/prettier-config",
+	"lint-staged": {
+		"*.{js,vue,jsx,ts,tsx,cjs,mjs}": "eslint --fix",
+		"*.{js,vue,jsx,ts,tsx,cjs,mjs,css,less,sass,scss,html,md}": "prettier --write"
+	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/cz-commitlint"
+		},
+		"commitlint": {
+			"extends": "@pch1024/cz-commitlint-conventional"
+		}
 	}
 }

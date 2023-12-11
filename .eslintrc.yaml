@@ -1,4 +1,0 @@
-root: true
-
-extends:
-    - '@pch1024/eslint-config/node'

@@ -1,4 +1,0 @@
-# 配置文档 https://commitlint.js.org
-extends: 
-    # - '@commitlint/config-conventional'
-    - '@pch1024/commitlint'

@@ -1,4 +1,0 @@
-# 配置文档 https://www.npmjs.com/package/lint-staged
-
-'*.{js,vue,jsx,ts,tsx,cjs}': 'eslint --fix'
-'*.{js,vue,jsx,ts,tsx,cjs,css,less,sass,scss,html,md}': 'prettier --write'
