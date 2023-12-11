@@ -6,7 +6,7 @@
 	"scripts": {
 		"lint": "lint-staged",
 		"prepare": "husky install",
-		"version": "auto-changelog -p && git add CHANGELOG.md"
+		"push": "auto-changelog -p && git add CHANGELOG.md && git push"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "18.4.3",
